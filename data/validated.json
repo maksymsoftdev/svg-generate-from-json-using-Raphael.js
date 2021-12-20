@@ -1,0 +1,89 @@
+{
+  "source": {
+    "type": "external",
+    "server": "servername.com",
+    "protocol": "ssh",
+    "iconImage": "icon-url"
+  },
+  "nodes": {
+    "source": {
+      "name": "header",
+      "labels": [
+        {
+          "name": "Site",
+          "value": "Site Name Value"
+        },
+        {
+          "name": "Upload Folder",
+          "value": "/tager/folder"
+        },
+        {
+          "name": "Size",
+          "value": "120kb"
+        },
+        {
+          "name": "Date Time",
+          "value": "June 12"
+        }
+      ],
+      "button": {
+        "href": "url-to-open-when-clicked",
+        "backgroundColor": "#888",
+        "text": "Resubmit",
+        "icon": "icon-url"
+      },
+      "icon": {
+        "backgroundColor": "#404040",
+        "icon": "url-of-icon"
+      }
+    },
+    "targets": [
+      {
+        "type": "external",
+        "server": "servername.com",
+        "protocol": "ssh",
+        "iconImage": "icon-url"
+      },
+      {
+        "type": "node",
+        "name": "header",
+        "labels": [
+          {
+            "name": "Site",
+            "value": "Site Name Value"
+          },
+          {
+            "name": "Upload Folder",
+            "value": "/tagert/folder"
+          },
+          {
+            "name": "Size",
+            "value": "120kb"
+          },
+          {
+            "name": "Date Time",
+            "value": "June 12"
+          }
+        ],
+        "button": {
+          "href": "url-to-open-when-clicked",
+          "backgroundColor": "#888",
+          "text": "Resubmit",
+          "icon": "icon-url"
+        },
+        "icon": {
+          "backgroundColor": "#404040",
+          "icon": "url-of-icon"
+        },
+        "targets": [
+          {
+            "type": "external",
+            "server": "servername.com",
+            "protocol": "ssh",
+            "iconImage": "icon-url"
+          }
+        ]
+      }
+    ]
+  }
+}

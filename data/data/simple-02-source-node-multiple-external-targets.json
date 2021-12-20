@@ -1,0 +1,96 @@
+{
+   "source":{
+      "type":"external",
+      "server":"10.164.178.7",
+      "protocol":"ssh",
+      "iconImage":"icons/push.png"
+   },
+   "nodes":{
+      "source":{
+         "name":"jde",
+         "labels":[
+            {
+               "name":"Site",
+               "value":"Site Name Value"
+            },
+            {
+               "name":"Folder",
+               "value":"/DTS_DESC_BPMFile"
+            },
+            {
+               "name":"Size",
+               "value":"19.30kb"
+            },
+            {
+               "name":"Date Time",
+               "value":"Today 12:45pm"
+            },
+            {
+               "name":"Application",
+               "value":"Bank_Loan_Application"
+            }
+         ],
+         "button":{
+            "backgroundColor":"#00FF00",
+            "text":"Resubmit",
+			"color":"#FFF",
+            "url":"/my-resubmit-url"
+         },
+         "icon":{
+            "backgroundColor":"#00FF00",
+            "iconImage":"icons/success-icon.png"
+         }
+      },
+	  "targets":[
+	    {
+			"type": "external",
+   	        "server": "sqlprod.local.com.au",
+	        "protocol": "smb",
+			"iconImage": "icons/push.png",
+         "button":{
+            "backgroundColor":"#00FF00",
+			"color":"#FFF",
+            "text":"Resubmit",
+            "url":"/my-resubmit-url"
+         },
+         "icon":{
+            "backgroundColor":"#00FF00",
+            "iconImage":"icons/success-icon.png"
+         }
+		},
+	    {
+			"type": "external",
+   	        "server": "mysql.local.com.au",
+	        "protocol": "smb",
+			"iconImage": "icons/push.png",
+         "button":{
+            "backgroundColor":"#00FF00",
+			"color":"#FFF",
+            "text":"Resubmit",
+            "url":"/my-resubmit-url"
+         },
+         "icon":{
+            "backgroundColor":"#00FF00",
+            "iconImage":"icons/success-icon.png"
+         }
+		},
+	    {
+			"type": "external",
+   	        "server": "oracleprod.local.com.au",
+	        "protocol": "ssh",
+			"iconImage": "icons/push.png",
+         "button":{
+            "backgroundColor":"#00FF00",
+			"color":"#FFF",
+            "text":"Resubmit",
+            "url":"/my-resubmit-url"
+         },
+         "icon":{
+            "backgroundColor":"#00FF00",
+            "iconImage":"icons/success-icon.png"
+         }
+		}
+	    
+	  ]
+   }
+}

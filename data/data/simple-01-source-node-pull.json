@@ -1,0 +1,40 @@
+{
+   "source":{
+      "type":"external",
+      "server":"10.164.20.7",
+      "protocol":"ssh",
+      "iconImage":"icons/pull.png"
+   },
+   "nodes":{
+      "source":{
+         "name":"rla",
+         "labels":[
+            {
+               "name":"Site",
+               "value":"OnDemand"
+            },
+            {
+               "name":"Folder",
+               "value":"/DTS_DESC_BPMFile"
+            },
+            {
+               "name":"Size",
+               "value":"19.30kb"
+            },
+            {
+               "name":"Date Time",
+               "value":"Today 10:30am"
+            }
+         ],
+         "button":{
+            "backgroundColor":"#00FF00",
+            "text":"Resubmit",
+            "url":"/my-resubmit-url"
+         },
+         "icon":{
+            "backgroundColor":"#00FF00",
+            "icon":"icons/failed-icon.png"
+         }
+      }
+   }
+}

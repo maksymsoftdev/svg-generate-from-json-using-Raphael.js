@@ -1,0 +1,69 @@
+{
+  //optional source data	
+  source: { //optional source
+    type: "external",
+	server: "servername.com",
+	protocol: "ssh",
+	iconImage: "icon-url"
+  }
+  
+  //node at this level is always present.
+  nodes:{
+	  source:{
+		name: "header",
+        labels:[
+		   {name:"Site",value:"Site Name Value"},
+		   {name:"Upload Folder",value:"/tager/folder"},
+		   {name:"Size",value:"120kb"},
+		   {name:"Date Time",value:"June 12"},
+		],
+        button:{ //optional button
+			href:"url-to-open-when-clicked",
+			backgroundColor:"#888",
+			text:"Resubmit",
+			icon:"icon-url"
+		},
+        icon:{
+		  backgroundColor:"#404040",
+          icon:"url-of-icon"		  
+		}		
+	  }
+	  targets:[ //optional targets
+	    {
+			type: "external",
+   	        server: "servername.com",
+	        protocol: "ssh",
+	        iconImage: "icon-url"
+		},
+		{
+			//nested node type optional  
+			type:"node",
+     		name: "header",
+            labels:[
+		       {name:"Site",value:"Site Name Value"},
+		       {name:"Upload Folder",value:"/tagert/folder"},
+		       {name:"Size",value:"120kb"},
+		       {name:"Date Time",value:"June 12"},
+		    ],
+            button:{ //optional button
+			  href:"url-to-open-when-clicked",
+			  backgroundColor:"#888",
+			  text:"Resubmit",
+			  icon:"icon-url"
+		    },
+            icon:{
+		      backgroundColor:"#404040",
+              icon:"url-of-icon"		  
+		    },
+            targets:[
+			  {
+  			    type: "external",
+   	            server: "servername.com",
+	            protocol: "ssh",
+	            iconImage: "icon-url"
+			  }
+			]			
+		}
+	  ]
+  }
+}
